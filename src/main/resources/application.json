@@ -1,0 +1,4 @@
+{
+  "port": 9020,
+  "message": "Hello from Vertx!"
+}
