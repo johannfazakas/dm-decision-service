@@ -3,16 +3,6 @@
   <component name="RemoteRepositoriesConfiguration">
     <remote-repository>
       <option name="id" value="central" />
-      <option name="name" value="Central Repository" />
-      <option name="url" value="https://repo.maven.apache.org/maven2" />
-    </remote-repository>
-    <remote-repository>
-      <option name="id" value="releases3" />
-      <option name="name" value="releases3" />
-      <option name="url" value="https://clj-lc-repo01.global.sdl.corp/repository/Releases" />
-    </remote-repository>
-    <remote-repository>
-      <option name="id" value="central" />
       <option name="name" value="Maven Central repository" />
       <option name="url" value="https://repo1.maven.org/maven2" />
     </remote-repository>
@@ -22,14 +12,14 @@
       <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
     </remote-repository>
     <remote-repository>
-      <option name="id" value="snapshots3" />
-      <option name="name" value="snapshots3" />
-      <option name="url" value="https://clj-lc-repo01.global.sdl.corp/repository/Releases-snapshots" />
+      <option name="id" value="MavenRepo" />
+      <option name="name" value="MavenRepo" />
+      <option name="url" value="https://repo.maven.apache.org/maven2/" />
     </remote-repository>
     <remote-repository>
-      <option name="id" value="maven-central" />
-      <option name="name" value="maven-central" />
-      <option name="url" value="https://clj-lc-repo01.global.sdl.corp/repository/maven-central/" />
+      <option name="id" value="BintrayJCenter" />
+      <option name="name" value="BintrayJCenter" />
+      <option name="url" value="https://jcenter.bintray.com/" />
     </remote-repository>
   </component>
 </project>
