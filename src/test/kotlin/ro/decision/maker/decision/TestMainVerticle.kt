@@ -1,4 +1,4 @@
-package ro.decision.maker.decision.dm_decision_service
+package ro.decision.maker.decision
 
 import io.vertx.core.Vertx
 import io.vertx.junit5.VertxExtension
@@ -12,7 +12,7 @@ class TestMainVerticle {
 
   @BeforeEach
   fun deploy_verticle(vertx: Vertx, testContext: VertxTestContext) {
-    vertx.deployVerticle(MainVerticle(), testContext.succeeding<String> { _ -> testContext.completeNow() })
+    vertx.deployVerticle(MainVerticle(), testContext.succeeding<String> { testContext.completeNow() })
   }
 
   @Test
