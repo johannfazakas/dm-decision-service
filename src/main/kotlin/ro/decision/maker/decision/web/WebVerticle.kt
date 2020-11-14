@@ -1,9 +1,9 @@
-package ro.decision.maker.decision.dm_decision_service
+package ro.decision.maker.decision.web
 
 import io.vertx.core.AbstractVerticle
 import io.vertx.core.Promise
 
-class MainVerticle : AbstractVerticle() {
+class WebVerticle : AbstractVerticle() {
 
   override fun start(startPromise: Promise<Void>) {
     vertx
