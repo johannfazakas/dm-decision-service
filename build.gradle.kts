@@ -20,7 +20,7 @@ val kotlinVersion = "1.3.72"
 val vertxVersion = "3.9.4"
 val junitJupiterVersion = "5.6.0"
 
-val mainVerticleName = "ro.decision.maker.decision.dm_decision_service.MainVerticle"
+val mainVerticleName = "ro.decision.maker.decision.MainVerticle"
 val watchForChange = "src/**/*"
 val doOnChange = "./gradlew classes"
 val launcherClassName = "io.vertx.core.Launcher"
@@ -38,7 +38,9 @@ dependencies {
 }
 
 val compileKotlin: KotlinCompile by tasks
-compileKotlin.kotlinOptions.jvmTarget = "11"
+val compileTestKotlin: KotlinCompile by tasks
+compileKotlin.kotlinOptions.jvmTarget = JavaVersion.VERSION_11.toString()
+compileTestKotlin.kotlinOptions.jvmTarget = JavaVersion.VERSION_11.toString()
 
 tasks.withType<ShadowJar> {
   archiveClassifier.set("fat")
